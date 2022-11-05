@@ -1,0 +1,12 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": false,
+  "stylelint.validate": [
+    "vue"
+  ],
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+}
