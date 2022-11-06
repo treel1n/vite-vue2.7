@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const a = 1
-console.log(a)
+// import { useRouter } from '@/router'
+// const router = useRouter()
+// console.log(router)
 </script>
 
 <template>

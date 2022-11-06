@@ -19,7 +19,7 @@ export default defineConfig(({ mode, command }) => {
       transformer: 'vue2',
       dirs: ['src/components'],
       extensions: ['vue'],
-      dts: 'src/components.d.ts'
+      dts: false
     }),
     AntdMomentResolver(),
     styleImport({
@@ -51,6 +51,16 @@ export default defineConfig(({ mode, command }) => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, 'src')
+      }
+    },
+    build: {
+      target: 'es2015',
+      // cssTarget: 'chrome80',
+      brotliSize: false,
+      chunkSizeWarningLimit: 2000,
+      commonjsOptions: {
+        //  改为 ture 后就会转化 require 语法
+        transformMixedEsModules: true
       }
     },
     server: {
