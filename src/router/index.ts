@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import type { RouteConfig } from 'vue-router'
-import Layout from '@/layout/default.vue'
+// import Layout from '@/layout/default.vue'
 Vue.use(VueRouter)
 
 export const constantRoutes: RouteConfig[] = [
@@ -35,11 +35,12 @@ export const constantRoutes: RouteConfig[] = [
   // },
 ]
 
-const createRouter = () =>
-  new VueRouter({
+const createRouter = () => {
+  return new VueRouter({
     routes: constantRoutes,
-    mode: 'history',
+    mode: 'history'
   })
+}
 
 const router = createRouter()
 
@@ -47,8 +48,6 @@ export function useRouter() {
   return router
 }
 
-export function useRoute() {
-  return router.currentRoute
-}
+export const useRoute = () => router.currentRoute
 
 export default router
