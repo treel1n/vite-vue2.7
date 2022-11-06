@@ -1,7 +1,7 @@
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.fixAll.eslint": true
+    "source.fixAll": false,
+    "source.fixAll.eslint": false
   },
   "editor.formatOnSave": false,
   "stylelint.validate": ["vue"],

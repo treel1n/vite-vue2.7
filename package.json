@@ -58,9 +58,8 @@
   ],
   "lint-staged": {
     "*.{js,ts,jsx,tsx,.vue}": [
-      "eslint --fix",
-      "prettier --write"
-      
+      "prettier --write",
+      "eslint --fix"
     ],
     "*.vue": [
       "stylelint --fix",
