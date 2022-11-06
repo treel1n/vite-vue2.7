@@ -1,8 +1,4 @@
-<script setup lang="ts">
-// import { useRouter } from '@/router'
-// const router = useRouter()
-// console.log(router)
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div>
