@@ -7,7 +7,6 @@
   "stylelint.validate": ["vue"],
   "css.validate": false,
   "less.validate": false,
-  "scss.validate": false,
   "editor.tabSize": 2,
   "files.eol": "\n",
 }

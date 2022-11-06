@@ -57,7 +57,7 @@
     "last 3 iOS versions"
   ],
   "lint-staged": {
-    "*.{js,ts,jsx,tsx}": [
+    "*.{js,ts,jsx,tsx,.vue}": [
       "prettier --write",
       "eslint --fix"
     ],

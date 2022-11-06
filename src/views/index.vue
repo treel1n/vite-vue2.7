@@ -1,8 +1,4 @@
-<script setup lang="ts">
-let a = 1
-a = '2'
-console.log(a / 2)
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div>
