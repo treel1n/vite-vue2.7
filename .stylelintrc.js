@@ -11,7 +11,6 @@ module.exports = {
     'no-empty-source': null,
     'selector-class-pattern': null
   },
-  // customSyntax: 'postcss-html',
   overrides: [
     {
       files: ['*.vue', '**/*.vue'],

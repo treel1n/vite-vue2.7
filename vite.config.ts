@@ -1,5 +1,5 @@
 import path from 'path'
-import { defineConfig } from 'vite'
+import { defineConfig, splitVendorChunkPlugin } from 'vite'
 import type { PluginOption } from 'vite'
 import vue from '@vitejs/plugin-vue2'
 import Components from 'unplugin-vue-components/vite'
@@ -37,7 +37,8 @@ export default defineConfig(({ mode, command }) => {
       include: ['src/**/*.ts', 'src/**/*.vue', 'src/**/*.js'],
       exclude: ['./node_modules/**'],
       cache: false
-    })
+    }),
+    splitVendorChunkPlugin()
   ]
   if (command === 'build') {
     plugins.push(

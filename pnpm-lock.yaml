@@ -20,7 +20,6 @@ specifiers:
   normalize.css: ^8.0.1
   pinia: ^2.0.23
   postcss: ^8.4.18
-  postcss-html: ^1.5.0
   postcss-less: ^6.0.0
   postcss-preset-env: ^7.8.2
   prettier: ^2.7.1
@@ -63,7 +62,6 @@ devDependencies:
   less: 4.1.3
   lint-staged: 13.0.3
   postcss: 8.4.18
-  postcss-html: 1.5.0
   postcss-less: 6.0.0_postcss@8.4.18
   postcss-preset-env: 7.8.2_postcss@8.4.18
   prettier: 2.7.1
@@ -3206,10 +3204,6 @@ packages:
   /js-tokens/4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
-  /js-tokens/8.0.0:
-    resolution: {integrity: sha512-PC7MzqInq9OqKyTXfIvQNcjMkODJYC8A17kAaQgeW79yfhqTWSOfjHYQ2mDDcwJ96Iibtwkfh0C7R/OvqPlgVA==}
-    dev: true
-
   /js-yaml/3.14.1:
     resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
     hasBin: true
@@ -4354,16 +4348,6 @@ packages:
       postcss-syntax: 0.36.2_kei4jy7wdgbhc236h4oijypxom
     dev: true
 
-  /postcss-html/1.5.0:
-    resolution: {integrity: sha512-kCMRWJRHKicpA166kc2lAVUGxDZL324bkj/pVOb6RhjB0Z5Krl7mN0AsVkBhVIRZZirY0lyQXG38HCVaoKVNoA==}
-    engines: {node: ^12 || >=14}
-    dependencies:
-      htmlparser2: 8.0.1
-      js-tokens: 8.0.0
-      postcss: 8.4.18
-      postcss-safe-parser: 6.0.0_postcss@8.4.18
-    dev: true
-
   /postcss-image-set-function/4.0.7_postcss@8.4.18:
     resolution: {integrity: sha512-9T2r9rsvYzm5ndsBE8WgtrMlIT7VbtTfE7b3BQnudUqnBcBo7L758oc+o+pdj/dUV0l5wjwSdjeOH2DZtfv8qw==}
     engines: {node: ^12 || ^14 || >=16}
@@ -4595,15 +4579,6 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       postcss: 7.0.39
-    dev: true
-
-  /postcss-safe-parser/6.0.0_postcss@8.4.18:
-    resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
-    engines: {node: '>=12.0'}
-    peerDependencies:
-      postcss: ^8.3.3
-    dependencies:
-      postcss: 8.4.18
     dev: true
 
   /postcss-sass/0.3.5:
