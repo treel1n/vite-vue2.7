@@ -3,8 +3,7 @@ module.exports = {
   extends: [
     'stylelint-config-standard',
     'stylelint-config-rational-order',
-    'stylelint-config-prettier',
-    'stylelint-config-html/vue'
+    'stylelint-config-prettier'
   ],
   defaultSeverity: 'warning',
   plugins: ['stylelint-order'],
@@ -12,6 +11,7 @@ module.exports = {
     'no-empty-source': null,
     'selector-class-pattern': null
   },
+  // customSyntax: 'postcss-html',
   overrides: [
     {
       files: ['*.vue', '**/*.vue'],
@@ -28,7 +28,8 @@ module.exports = {
             ignorePseudoElements: ['v-deep', 'v-global', 'v-slotted']
           }
         ]
-      }
+      },
+      customSyntax: 'postcss-less'
     }
   ]
 }
