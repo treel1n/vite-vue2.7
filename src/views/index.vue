@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import axios from 'axios'
+
+console.log(axios)
+
 const a = 1
 </script>
 
